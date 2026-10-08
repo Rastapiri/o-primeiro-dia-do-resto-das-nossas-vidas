@@ -16,7 +16,7 @@ plant = "🌸";
 return (
 <div
 style={{
-fontSize: "7rem",
+fontSize: "6rem",
 marginBottom: "20px",
 }}
 >

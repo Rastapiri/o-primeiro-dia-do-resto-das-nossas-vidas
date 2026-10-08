@@ -551,7 +551,7 @@ marginTop: "30px",
  
 <h3>📍 Destino</h3>
  
-<p>????????</p>
+<p>Costa Vicentina</p>
 </div>
  
 <button

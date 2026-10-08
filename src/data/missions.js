@@ -65,7 +65,7 @@ photo: null,
 {
 id: 10,
 title: "🎨 Retratos um do outro",
-clue: "A viagem começa dia 24/3.",
+clue: "Vamos estar num sítio só para nós.",
 completed: false,
 photo: null,
 },

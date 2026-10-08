@@ -493,7 +493,12 @@ fontSize: "clamp(2rem, 8vw, 4rem)",
 🌸
 </h1>
  
-<h2>
+<h2
+style={{
+color: "#44513D",
+fontSize: "clamp(1.8rem, 6vw, 2.5rem)",
+}}
+>
 Parabéns Piki ❤️
 </h2>
  

@@ -302,12 +302,41 @@ const reader = new FileReader();
  
 reader.onload = () => {
  
+const img = new Image();
+ 
+img.onload = () => {
+ 
+const canvas = document.createElement("canvas");
+ 
+const maxWidth = 1200;
+ 
+const scale = Math.min(
+1,
+maxWidth / img.width
+);
+ 
+canvas.width = img.width * scale;
+canvas.height = img.height * scale;
+ 
+const ctx = canvas.getContext("2d");
+ 
+ctx.drawImage(
+img,
+0,
+0,
+canvas.width,
+canvas.height
+);
+ 
+const compressedImage =
+canvas.toDataURL("image/jpeg", 0.7);
+ 
 const updatedMissions = missionList.map((mission) => {
  
 if (mission.id === selectedMission.id) {
 return {
 ...mission,
-photo: reader.result,
+photo: compressedImage,
 };
 }
  
@@ -318,8 +347,12 @@ setMissionList(updatedMissions);
  
 setSelectedMission({
 ...selectedMission,
-photo: reader.result,
+photo: compressedImage,
 });
+ 
+};
+ 
+img.src = reader.result;
  
 };
  

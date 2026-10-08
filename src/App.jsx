@@ -158,12 +158,19 @@ maxWidth: "600px",
 }}
 >
  
+<div
+style={{
+marginBottom: "30px",
+}}
+>
 <PlantProgress completed={completedMissions} />
+</div>
  
 <h1
 style={{
 color: "#44513D",
 textAlign: "center",
+marginTop: "30px",
 }}
 >
 Missões da Aventura

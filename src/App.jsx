@@ -168,6 +168,17 @@ textAlign: "center",
 >
 Missões da Aventura
 </h1>
+<p
+style={{
+textAlign: "center",
+color: "#6B7A52",
+fontStyle: "italic",
+marginBottom: "20px",
+}}
+>
+🌿 Não existe uma ordem certa. Qualquer ordem é perfeita 
+se for feito ao teu lado.
+</p>
 <button
 onClick={() => setPage("album")}
 style={{
